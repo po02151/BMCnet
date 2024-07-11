@@ -1,0 +1,15 @@
+
+@font-face{
+    font-family: 'GmarketSans';
+    src: url('../fonts/GmarketSansTTFBold.eot');
+    src: url('../fonts/GmarketSansTTFBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GmarketSansTTFBold.svg#GmarketSansTTFBold') format('svg'),
+         url("../fonts/GmarketSansTTFBold.ttf") format("truetype"),
+         url('../fonts/GmarketSansTTFBold.woff') format('woff'),
+         url('../fonts/GmarketSansTTFBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+  /* 예제 */

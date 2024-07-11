@@ -1,0 +1,74 @@
+
+.topBtn{
+    /* background-color */
+    background: transparent;
+    /* Note: currently only Safari supports backdrop-filter */
+    backdrop-filter: blur(30px);
+    --webkit-backdrop-filter: blur(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color */
+    opacity: 1; position: fixed; right: 30px; bottom: 30px;  z-index: 999; width: 60px; height: 60px; border-radius: 100%;}
+.topBtn:after{content: ''; position: absolute; background: url('../../images/topBtn.png') center / contain no-repeat; width: 18px; height: 24px; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.topBtn.hidden{display: none;}
+
+/* header */
+header{z-index: 99; width: 100%; position: fixed; left: 50%; top: 20px; left: 0;}
+header > div{display: flex; box-shadow: rgb(0 0 0 / 0.05) 1px 1px 10px 1px; border-radius: 15px; padding: 0 50px; box-sizing: border-box; width: 1420px; margin: 0 auto; font-family: 'pretendard'; background-color: #fff;}
+header h1{ width: 7.57%;}
+header h1 a{display: block; text-indent: -9999px; background: url('../../images/bmc_logo.png') center / contain no-repeat; width: 100px; height: 75px;}
+header nav{width: 73.48%; padding-left: 45px; box-sizing: border-box;}
+header nav > ul{display: flex; justify-content: left; position: relative;}
+header nav > ul > li{position: relative;}
+header nav > ul > li > a{text-decoration: none; padding: 0 35px;text-align: center; display: block; line-height: 75px; color: #555555; font-size: 17px; font-weight: 500;}
+header nav > ul > li > a > span{position: relative;}
+header nav > ul > li > a > span span{position: relative; margin-left: 10px;}
+header nav > ul > li > a > span span img{position: absolute; top: 50%; transform: translateY(-50%);}
+/* header nav > ul > li:hover .sub_menu{display: block;} */
+
+header > div .rightBox{width: 18.93%; display: flex; justify-content: right; align-items: center; height: 75px;}
+header > div .rightBox a{display: block; background-color: #0A77FF; line-height: 45px; width: 170px; text-align: center; text-decoration: none; color: #fff; font-size: 17px; font-weight: 500; border-radius: 5px;}
+header > div .rightBox .langBox button{display: none; background-color: #EEEEEE; border: none; line-height: 45px; width: 70px; border-radius: 5px; margin-left: 10px; font-size: 14px; font-weight: 400; color: #555555;}
+header > div .rightBox .langBox button.active{display: block;}
+
+header .sub_menu{background-color: #fff; display: none; position: absolute; width: 140px; top: 60px; left: 50%; transform: translateX(-50%); box-shadow: 1px 1px 8px rgba(0,0,0,0.1); border-radius: 10px; padding: 10px; box-sizing: border-box;}
+header .sub_menu > li{border-radius: 5px; padding: 0 15px; box-sizing: border-box;}
+/* header .sub_menu > li:hover{background-color: #F9F9F9;} */
+header .sub_menu > li a{text-decoration: none; display: block; box-sizing: border-box; line-height: 38px; font-size: 14px; color: #666666; font-weight: 400;}
+/* header .sub_menu > li:hover a{color: #0A77FF;} */
+
+
+header .hamburger{display: none;}
+/* header Fin */
+
+
+/* footer */
+footer{border-top: 1px solid #EEEEEE; position: absolute; bottom: 0; left: 0; background-color: #fff; height: 380px; width: 100%; z-index: 9999;}
+footer p{font-size: 14px; font-weight: 300; color: #666666;}
+footer p strong{margin-right: 10px; font-size: 14px; font-weight: 600; color: #666666;}
+footer address{line-height: 20px; font-style: normal; font-size: 14px; font-weight: 300; color: #666666; margin-bottom: 25px;}
+footer > div > div{width: 1320px; margin: 0 auto; padding: 35px 0;}
+footer > div > div > div:nth-child(1){margin-bottom: 50px;}
+footer > div > div > div:nth-child(2){margin-bottom: 100px;}
+footer > div > div > div:nth-child(2) ul{margin-bottom: 25px; display: flex;}
+footer > div > div > div:nth-child(2) ul li{position: relative;}
+footer > div > div > div:nth-child(2) ul li:not(:nth-child(1)){margin-left: 25px;}
+footer > div > div > div:nth-child(2) ul li:not(:last-child){padding-right: 25px;}
+footer > div > div > div:nth-child(2) ul li:not(:last-child):after{content: ''; display: block; position: absolute; width: 1px; height: 15px; background-color: #DDDDDD; right: 0; top: 50%; transform: translateY(-50%);}
+footer > div > div > div:nth-child(2) > div{display: flex;}
+footer > div > div > div:nth-child(2) > div a{text-decoration: none; color: #666666; font-size: 14px; font-weight: 300;}
+footer > div > div > div:nth-child(2) > div p{position: relative;}
+footer > div > div > div:nth-child(2) > div p:not(:nth-child(1)){margin-left: 25px;}
+footer > div > div > div:nth-child(2) > div p:not(:last-child){padding-right: 25px;}
+footer > div > div > div:nth-child(2) > div p:not(:last-child):after{content: ''; display: block; position: absolute; width: 1px; height: 15px; background-color: #DDDDDD; right: 0; top: 50%; transform: translateY(-50%);}}
+footer > div > div > div:nth-child(3){display: flex; justify-content: space-between;}
+footer > div > div > div:nth-of-type(3){display: flex; justify-content: space-between;}
+footer > div > div > div:nth-child(3) ul{display: flex;}
+footer > div > div > div:nth-child(3) ul li:not(:first-child){margin-left: 10px;}
+footer > div > div > div:nth-child(3) ul li a{position: relative; display: block; width: 30px; height: 30px; background-color: #F5F5F5; border-radius: 5px;}
+footer > div > div > div:nth-child(3) ul li a:after{content: ''; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-repeat: no-repeat; background-position: center; background-size: contain;}
+footer > div > div > div:nth-child(3) ul li:nth-child(1) a:after{background-image: url('../../images/footer_youtube.png'); width: 16px; height: 12px;}
+footer > div > div > div:nth-child(3) ul li:nth-child(2) a:after{background-image: url('../../images/footer_blog.png'); width: 16px; height: 15px;}
+footer > div > div > div:nth-child(3) ul li:nth-child(3) a:after{background-image: url('../../images/footer_facebook.png'); width: 8px; height: 14px;}
+footer > div > div > div:nth-child(3) ul li:nth-child(4) a:after{background-image: url('../../images/footer_linkedin.png'); width: 14px; height: 12px;}
+footer > div > div > div:nth-child(3) p{font-size: 12px; font-weight: 300; color: #999999; line-height: 30px;}
+/* footer Fin */
